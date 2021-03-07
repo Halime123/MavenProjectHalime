@@ -1,0 +1,166 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2212084000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "enter valid credentials",
+            "match": {
+              "location": "com.hrms.stepdefinitions.LoginStepDefinition.enter_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3635774000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on login button",
+            "match": {
+              "location": "com.hrms.stepdefinitions.LoginStepDefinition.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2040496000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify dashboard is displayed",
+            "match": {
+              "location": "com.hrms.stepdefinitions.LoginStepDefinition.verify_dashboard_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1387807000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on PIM",
+            "match": {
+              "location": "com.hrms.stepdefinitions.AddEmployeeStepDefinition.click_on_PIM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 780528000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on add employee button",
+            "match": {
+              "location": "com.hrms.stepdefinitions.AddEmployeeStepDefinition.click_on_add_employee_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-07T05:07:03.726Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5508920000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hrms.stepdefinitions.Hooks.startTest()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Adding multiple employees at one execution",
+        "description": "",
+        "id": "add-employee-functionality;adding-multiple-employees-at-one-execution",
+        "after": [
+          {
+            "embeddings": [
+              {
+                "data": "",
+                "mime_type": "image/.png",
+                "name": "Adding multiple employees at one execution"
+              }
+            ],
+            "result": {
+              "duration": 852789000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hrms.stepdefinitions.Hooks.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Bunayamin J Smith expected [Bunayamin J Smith] but found [Verifying profile name]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\n\tat org.testng.Assert.assertEquals(Assert.java:122)\n\tat org.testng.Assert.assertEquals(Assert.java:629)\n\tat com.hrms.stepdefinitions.AddEmployeeStepDefinition.add_multiple_employees_and_verify_they_are_added_successfully(AddEmployeeStepDefinition.java:80)\n\tat ✽.add multiple employees and verify they are added successfully(file:///Users/halime/DEV/Java8batchcode/CucumberFrameworkBatch8/src/test/resources/features/AddEmployee.feature:42)\n",
+              "duration": 1829101000,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "add multiple employees and verify they are added successfully",
+            "match": {
+              "location": "com.hrms.stepdefinitions.AddEmployeeStepDefinition.add_multiple_employees_and_verify_they_are_added_successfully(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "MiddleName",
+                  "LastName",
+                  "EmployeeId"
+                ]
+              },
+              {
+                "cells": [
+                  "Bunayamin",
+                  "J",
+                  "Smith",
+                  "111111"
+                ]
+              },
+              {
+                "cells": [
+                  "Levent",
+                  "K",
+                  "Wick",
+                  "22222"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dtWithHeader"
+          }
+        ]
+      }
+    ],
+    "name": "Add Employee Functionality",
+    "description": "",
+    "id": "add-employee-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddEmployee.feature",
+    "tags": []
+  }
+]
